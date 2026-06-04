@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Tiara ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --pink:#ff77a8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    background:black;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.window-frame{
+    width:100%;
+    max-width:430px;
+    height:100vh;
+    max-height:900px;
+    overflow:hidden;
+    position:relative;
+    border-radius:24px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.6);
+}
+
+.grid-background{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:#fffafb;
+
+    background-image:
+    linear-gradient(#f8d9e0 1px, transparent 1px),
+    linear-gradient(90deg,#f8d9e0 1px, transparent 1px);
+
+    background-size:25px 25px;
+}
+
+.wave-accent{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(180deg,#ff77a8,#ff4d6d);
+
+    clip-path:polygon(0% 0%,35% 0%,26% 25%,46% 50%,24% 74%,37% 100%,0% 100%);
+    opacity:0.14;
+}
+
+.romantic-bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:url('https://i.postimg.cc/4dz5CwjC/IMG-0333-JPG.jpg');
+    background-size:cover;
+    background-position:center;
+    filter:brightness(0.38);
+}
+
+.screen{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:30px;
+    animation:fade .7s ease;
+}
+
+.screen.active{
+    display:flex;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.content{
+    z-index:2;
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.main-title{
+    color:white;
+    font-size:2.3rem;
+    font-weight:800;
+    text-align:center;
+    margin-bottom:15px;
+    text-shadow:0 4px 18px rgba(0,0,0,0.5);
+}
+
+.special-text{
+    font-family:'Pacifico',cursive;
+    color:#ffd1dc;
+    font-size:2.1rem;
+    text-align:center;
+    line-height:1.5;
+    text-shadow:0 0 20px rgba(255,192,203,0.7);
+}
+
+.sub{
+    color:white;
+    text-align:center;
+    line-height:1.7;
+    margin-top:10px;
+    font-size:1.05rem;
+}
+
+.verify-card{
+    width:100%;
+    padding:28px;
+    border-radius:24px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 10px 40px rgba(0,0,0,0.2);
+}
+
+input[type="password"]{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    margin-top:16px;
+    text-align:center;
+    outline:none;
+    font-size:1rem;
+}
+
+.fake-captcha{
+    width:100%;
+    margin-top:18px;
+    background:white;
+    border-radius:10px;
+    padding:14px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.captcha-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.captcha-left input{
+    width:22px;
+    height:22px;
+}
+
+.action-btn{
+    background:linear-gradient(135deg,#ff77a8,#ff4d6d);
+    color:white;
+    border:none;
+    padding:13px 34px;
+    border-radius:14px;
+    margin-top:18px;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(255,105,180,0.4);
+}
+
+.action-btn:hover{
+    transform:scale(1.08);
+}
+
+.media-holder{
+    width:280px;
+    height:280px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.media-holder img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    border-radius:20px;
+}
+
+.beating-heart{
+    font-size:6rem;
+    animation:beat 1s infinite;
+    cursor:pointer;
+    filter:drop-shadow(0 0 25px hotpink);
+}
+
+@keyframes beat{
+    0%{transform:scale(1);}
+    25%{transform:scale(1.2);}
+    50%{transform:scale(1);}
+    75%{transform:scale(1.15);}
+    100%{transform:scale(1);}
+}
+
+.polaroid-string{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    margin-bottom:25px;
+}
+
+.polaroid{
+    width:30%;
+    background:white;
+    padding:8px 8px 25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:.3s;
+}
+
+.polaroid:hover{
+    transform:scale(1.08) rotate(2deg);
+}
+
+.polaroid img{
+    width:100%;
+    height:95px;
+    object-fit:cover;
+}
+
+.letter{
+    width:100%;
+    background:rgba(255,255,255,0.14);
+    border-radius:20px;
+    padding:22px;
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.letter p{
+    color:white;
+    line-height:1.8;
+    font-style:italic;
+}
+
+.float-heart{
+    position:absolute;
+    color:pink;
+    font-size:22px;
+    animation:floatUp 5s linear forwards;
+    pointer-events:none;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-10vh);
+        opacity:0;
+    }
+}
+
+.confetti{
+    position:absolute;
+    width:10px;
+    height:10px;
+    top:-10px;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+        opacity:0;
+    }
+}
+
+.music-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    z-index:99;
+    background:white;
+    border:none;
+    padding:10px 16px;
+    border-radius:30px;
+    font-weight:bold;
+    color:#ff4d6d;
+    cursor:pointer;
+}
+
+.final-title{
+    font-family:'Pacifico',cursive;
+    color:#ffd1dc;
+    font-size:3rem;
+    text-align:center;
+}
+
+@keyframes pulseGlow{
+from{
+transform:scale(1);
+box-shadow:0 0 10px rgba(255,192,203,0.3);
+}
+
+to{
+transform:scale(1.03);
+box-shadow:0 0 30px rgba(255,105,180,0.7);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="music" loop>
+<source src="raave.mp3" type="audio/mp3">
+</audio>
+
+<div class="window-frame">
+
+<div class="grid-background"></div>
+<div class="wave-accent"></div>
+
+<button class="music-btn" onclick="toggleMusic()">🎵 Music</button>
+
+<!-- PAGE 1 -->
+
+<div class="screen active" id="page1">
+
+<div class="verify-card">
+
+<h2 style="text-align:center;color:black;">
+Special Access only for Tiara💖
+</h2>
+
+<p style="text-align:center;margin-top:10px;line-height:1.6;color:#333;">
+Enter the password.<br>
+Hint: Most beautiful girl 🎀
+</p>
+
+<input type="password" id="password" placeholder="Enter password">
+
+<div class="fake-captcha">
+
+<div class="captcha-left">
+<input type="checkbox" id="check">
+<span>I'm Tiara Emryn Joseph</span>
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/RecaptchaLogo.svg"
+style="width:34px;">
+
+</div>
+
+<button class="action-btn" style="width:100%;" onclick="verify()">
+Continue 💕
+</button>
+
+</div>
+</div>
+
+<!-- PAGE 2 -->
+
+<div class="screen" id="page2">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="main-title">
+HEY BEAUTIFUL ❤️
+</h1>
+
+<p class="sub">
+I made something really special for you ✨
+</p>
+
+<div>
+
+<button class="action-btn" onclick="showPage(3)">
+Yes 💖
+</button>
+
+<button class="action-btn" onclick="showPage('no')">
+No 😭
+</button>
+
+</div>
+
+</div>
+</div>
+
+<!-- NO PAGE 1 -->
+
+<div class="screen" id="page-no">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="main-title">
+Please Come Back 🥺💖
+</h1>
+
+<div class="media-holder">
+<img src="https://media.giphy.com/media/OPU6wzx8JrHna/giphy.gif">
+</div>
+
+<div>
+
+<button class="action-btn" onclick="showPage(2)">
+Come Back 💕
+</button>
+
+<button class="action-btn" onclick="showPage('no2')">
+No 😭
+</button>
+
+</div>
+
+</div>
+</div>
+
+<!-- NO PAGE 2 -->
+
+<div class="screen" id="page-no2">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="main-title">
+Still No? 😭
+</h1>
+
+<div class="media-holder">
+<img src="https://media.giphy.com/media/l2R0aKwejYr8ycKAg/giphy.gif">
+</div>
+
+<p class="sub">
+This tiny surprise misses you already 💖
+</p>
+
+<div>
+
+<button class="action-btn" onclick="showPage(2)">
+Okay 💕
+</button>
+
+<button class="action-btn" onclick="showPage('no3')">
+No 😭
+</button>
+
+</div>
+
+</div>
+</div>
+
+<!-- NO PAGE 3 -->
+
+<div class="screen" id="page-no3">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="main-title">
+You’re Hurting Me 💔🥺
+</h1>
+
+<div class="media-holder">
+<img src="https://media.giphy.com/media/ISOckXUybVfQ4/giphy.gif">
+</div>
+
+<p class="sub">
+At least give it one tiny chance ✨
+</p>
+
+<div>
+
+<button class="action-btn" onclick="showPage(2)">
+Fine 💖
+</button>
+
+<button class="action-btn" onclick="showPage('no4')">
+No 😭
+</button>
+
+</div>
+
+</div>
+</div>
+
+<!-- NO PAGE 4 -->
+
+<div class="screen" id="page-no4">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="main-title">
+Tiaraaaaa 🌸🥺
+</h1>
+
+<div class="media-holder">
+<img src="https://media.giphy.com/media/9Y5BbDSkSTiY8/giphy.gif">
+</div>
+
+<p class="sub">
+You really gonna leave this cute little surprise behind? 💕
+</p>
+
+<div>
+
+<button class="action-btn" onclick="showPage(2)">
+I’m Back 💖
+</button>
+
+<button class="action-btn" onclick="showPage('no5')">
+No 😭
+</button>
+
+</div>
+
+</div>
+</div>
+
+<!-- NO PAGE 5 -->
+
+<div class="screen" id="page-no5">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="main-title">
+Last Chance 😭💖
+</h1>
+
+<div class="media-holder">
+<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+</div>
+
+<p class="sub">
+Don’t break my hearttt 🌸
+</p>
+
+<div>
+
+<button class="action-btn" onclick="showPage(2)">
+Come Back 💕
+</button>
+
+<button class="action-btn" onclick="showPage('no6')">
+No 😭
+</button>
+
+</div>
+
+</div>
+</div>
+
+<!-- FINAL NO PAGE -->
+
+<div class="screen" id="page-no6">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="special-text">
+Okay Fine 😔💖
+</h1>
+
+<div class="media-holder">
+<img src="https://media.giphy.com/media/42YlR8u9gV5Cw/giphy.gif">
+</div>
+
+<p class="sub">
+Please come backkk 🥺✨
+</p>
+
+<button class="action-btn" onclick="showPage(2)">
+💖 Come Back
+</button>
+
+</div>
+</div>
+
+<!-- PAGE 3 -->
+
+<div class="screen" id="page3">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="special-text">
+You make everything prettier 🌸✨
+</h1>
+
+<p class="sub">
+Even this tiny website feels magical because of you 💕
+</p>
+
+<div class="beating-heart" onclick="showPage(4)">
+💖
+</div>
+
+<p class="sub">
+Touch the heart ❤️
+</p>
+
+</div>
+</div>
+
+<!-- PAGE 4 -->
+
+<div class="screen" id="page4">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<div class="media-holder">
+<img src="https://media.giphy.com/media/GvjRy6pUMUjQxiKNlh/giphy.gif">
+</div>
+
+<h1 class="special-text">
+Happy Birthday 🎂💖
+</h1>
+
+<p class="sub">
+Stay cute, stay happy, stay magical ✨
+</p>
+
+<button class="action-btn" onclick="showPage(5)">
+Next ➡️
+</button>
+
+</div>
+</div>
+
+<!-- PAGE 5 -->
+
+<div class="screen" id="page5">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="special-text">
+A Little Letter 💌
+</h1>
+
+<div class="letter">
+
+<p>
+Your smile deserves to stay forever 🌸
+The way you laugh, the way you exist,
+everything about you feels magical ✨
+Never stop being the amazing person you are 💖
+</p>
+
+</div>
+
+<button class="action-btn" onclick="showPage(6)">
+Next 💕
+</button>
+
+</div>
+</div>
+
+<!-- PAGE 6 -->
+
+<div class="screen" id="page6">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<div class="polaroid-string">
+
+<div class="polaroid">
+<img src="https://i.postimg.cc/SKS8cK3n/crop-JPG.jpg">
+</div>
+
+<div class="polaroid">
+<img src="https://i.postimg.cc/qMvt0zyg/IMG-0327-JPG.jpg">
+</div>
+
+<div class="polaroid">
+<img src="https://i.postimg.cc/4NvT85mB/IMG-0329-JPG.jpg">
+</div>
+
+</div>
+
+<h1 class="final-title">
+Happy Bday Dear 🩷
+</h1>
+
+<p class="sub">
+“You don't know how much you mean to me 💕”
+</p>
+
+<button class="action-btn" onclick="showPage(7)">
+Next..🎁
+</button>
+
+</div>
+</div>
+
+<!-- PAGE 7 -->
+
+<div class="screen" id="page7">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+    
+<p class="sub">
+On the day we celebrate nature's beauty, I celebrate someone who is more Beautiful . Happy Birthday💕
+</p>
+
+
+
+<div class="media-holder" style="cursor:pointer;" onclick="showPage(8)">
+<img src="https://media.giphy.com/media/xThuWcaa4U4XZQDgvm/giphy.gif">
+</div>
+
+</div>
+</div>
+
+<!-- PAGE 8 -->
+
+<div class="screen" id="page8">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="special-text">
+Biggest Birthday Hug 🤗💖
+</h1>
+
+<div class="media-holder">
+<img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif">
+</div>
+
+<div style="
+display:flex;
+gap:14px;
+margin-top:20px;
+flex-wrap:wrap;
+justify-content:center;
+">
+
+<button class="action-btn" onclick="sendLove()">
+💌 Open Surprise
+</button>
+
+<button class="action-btn" onclick="showPage(9)">
+🫂 Hug Me
+</button>
+
+</div>
+
+<div id="loveMessage"
+style="
+display:none;
+margin-top:28px;
+padding:20px;
+border-radius:20px;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.2);
+animation:pulseGlow 1.5s infinite alternate;
+">
+
+<h2 style="
+font-family:'Pacifico',cursive;
+color:#ffd1dc;
+font-size:2rem;
+margin-bottom:10px;
+">
+To The Prettiest Soul 💖
+</h2>
+
+<p style="
+color:white;
+line-height:1.9;
+font-size:1.02rem;
+text-align:center;
+">
+I hope today makes you feel as loved, special, and beautiful as you truly are 🌸✨<br><br>
+
+And honestly... seeing you smile is enough to make this whole thing worth it 💕
+</p>
+
+</div>
+
+</div>
+</div>
+
+<!-- PAGE 9 -->
+
+<div class="screen" id="page9">
+
+<div class="romantic-bg"></div>
+
+<div class="content">
+
+<h1 class="special-text">
+Come Hereee 🫂💖
+</h1>
+
+<div class="media-holder">
+<img src="https://media.giphy.com/media/3M4NpbLCTxBqU/giphy.gif">
+</div>
+
+<div style="
+margin-top:10px;
+padding:20px;
+border-radius:22px;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.2);
+animation:pulseGlow 1.5s infinite alternate;
+">
+
+<p style="
+color:white;
+font-size:1.08rem;
+line-height:1.9;
+text-align:center;
+">
+If I could, I’d genuinely pull you through the screen right now just to give you the warmest hug ever🥺💖 <b>Thank yoU</b>
+</p>
+
+</div>
+
+<div style="
+display:flex;
+flex-direction:column;
+align-items:center;
+width:100%;
+">
+
+<button class="action-btn"
+onclick="showPage(8)"
+style="margin-top:22px;">
+⬅ Back
+</button>
+
+<button class="action-btn"
+onclick="showPage(2)"
+style="
+margin-top:14px;
+background:linear-gradient(135deg,#ff9ec4,#ff5d8f);
+">
+🔁 Replay The Magic
+</button>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+let heartInterval;
+
+/* VERIFY */
+
+function verify(){
+
+const pass=document.getElementById('password').value.trim().toLowerCase();
+
+const check=document.getElementById('check').checked;
+
+if(pass!=="tiara"){
+alert("Password is Tiara ");
+return;
+}
+
+if(!check){
+alert("Please verify first 💕");
+return;
+}
+
+document.getElementById('music').play();
+
+showPage(2);
+
+createConfetti();
+
+}
+
+/* PAGE SWITCH */
+
+function showPage(num){
+
+const pages=document.querySelectorAll('.screen');
+
+pages.forEach(p=>{
+p.classList.remove('active');
+});
+
+let id='page'+num;
+
+if(num==='no'){id='page-no';}
+if(num==='no2'){id='page-no2';}
+if(num==='no3'){id='page-no3';}
+if(num==='no4'){id='page-no4';}
+if(num==='no5'){id='page-no5';}
+if(num==='no6'){id='page-no6';}
+
+document.getElementById(id).classList.add('active');
+
+if(num===4 || num===8 || num===9){
+
+if(!heartInterval){
+heartInterval=setInterval(createHeart,300);
+}
+
+createConfetti();
+
+}
+
+}
+
+/* HEARTS */
+
+function createHeart(){
+
+const heart=document.createElement('div');
+
+heart.classList.add('float-heart');
+
+heart.innerHTML=['💖','💕','❤️','✨'][Math.floor(Math.random()*4)];
+
+heart.style.left=Math.random()*100+'vw';
+
+heart.style.fontSize=(Math.random()*25+20)+'px';
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},5000);
+
+}
+
+/* CONFETTI */
+
+function createConfetti(){
+
+for(let i=0;i<80;i++){
+
+const conf=document.createElement('div');
+
+conf.classList.add('confetti');
+
+conf.style.left=Math.random()*100+'vw';
+
+conf.style.background=
+['#ff4d6d','#ffd166','#06d6a0','#118ab2','#ef476f']
+[Math.floor(Math.random()*5)];
+
+conf.style.animationDuration=
+(Math.random()*3+2)+'s';
+
+document.body.appendChild(conf);
+
+setTimeout(()=>{
+conf.remove();
+},5000);
+
+}
+
+}
+
+/* MUSIC */
+
+const music=document.getElementById('music');
+
+function toggleMusic(){
+
+if(music.paused){
+music.play();
+}else{
+music.pause();
+}
+
+}
+
+/* SURPRISE */
+
+function sendLove(){
+
+document.getElementById('loveMessage').style.display='block';
+
+createConfetti();
+
+}
+
+</script>
+
+</body>
+</html>
